@@ -1,0 +1,14 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/ankitdeshmukh/Library/Developer/Xcode/DerivedData/SCGateway-Mixpanel-aepjlsaiikddulcrvkpbbohixzbm/Build/Products/Debug-iphoneos/SCGateway_Mixpanel.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/ankitdeshmukh/Desktop/iOS/SCGateway-Mixpanel/build/SCGateway-Mixpanel.build/Debug-iphoneos/SCGateway-Mixpanel.build/unextended-module.modulemap",
+    }]
+  }]
+}

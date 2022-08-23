@@ -6,15 +6,36 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		888995862875C90E0057330B /* SCGateway-Mixpanel-Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 888995872875C90E0057330B /* Build configuration list for PBXAggregateTarget "SCGateway-Mixpanel-Framework" */;
+			buildPhases = (
+				8889958D2875CB800057330B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "SCGateway-Mixpanel-Framework";
+			productName = "SCGateway-Mixpanel-Framework";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		622204F4D0FBF8EC672181DC /* Pods_SCGateway_Mixpanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4B5EC88EBE74980F62623 /* Pods_SCGateway_Mixpanel.framework */; };
 		8889957F2875C8CE0057330B /* SCGateway_Mixpanel.docc in Sources */ = {isa = PBXBuildFile; fileRef = 8889957E2875C8CE0057330B /* SCGateway_Mixpanel.docc */; };
 		888995802875C8CE0057330B /* SCGateway_Mixpanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8889957D2875C8CE0057330B /* SCGateway_Mixpanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		888995902875CC980057330B /* SCGateway+Mixpanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8889958F2875CC980057330B /* SCGateway+Mixpanel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		325F9920F8510CA3680544FC /* Pods-SCGateway-Mixpanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCGateway-Mixpanel.debug.xcconfig"; path = "Target Support Files/Pods-SCGateway-Mixpanel/Pods-SCGateway-Mixpanel.debug.xcconfig"; sourceTree = "<group>"; };
+		50D4627E8020563A09063162 /* Pods-SCGateway-Mixpanel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCGateway-Mixpanel.release.xcconfig"; path = "Target Support Files/Pods-SCGateway-Mixpanel/Pods-SCGateway-Mixpanel.release.xcconfig"; sourceTree = "<group>"; };
 		8889957A2875C8CE0057330B /* SCGateway_Mixpanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCGateway_Mixpanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8889957D2875C8CE0057330B /* SCGateway_Mixpanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCGateway_Mixpanel.h; sourceTree = "<group>"; };
 		8889957E2875C8CE0057330B /* SCGateway_Mixpanel.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SCGateway_Mixpanel.docc; sourceTree = "<group>"; };
+		8889958F2875CC980057330B /* SCGateway+Mixpanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCGateway+Mixpanel.swift"; sourceTree = "<group>"; };
+		88AEF39D28B4AE4B00367968 /* Auth0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Auth0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF4B5EC88EBE74980F62623 /* Pods_SCGateway_Mixpanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCGateway_Mixpanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622204F4D0FBF8EC672181DC /* Pods_SCGateway_Mixpanel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7421288B78EE73EC82D81CA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				325F9920F8510CA3680544FC /* Pods-SCGateway-Mixpanel.debug.xcconfig */,
+				50D4627E8020563A09063162 /* Pods-SCGateway-Mixpanel.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		888995702875C8CE0057330B = {
 			isa = PBXGroup;
 			children = (
 				8889957C2875C8CE0057330B /* SCGateway-Mixpanel */,
 				8889957B2875C8CE0057330B /* Products */,
+				7421288B78EE73EC82D81CA4 /* Pods */,
+				F6FFE35E0DEC2F7E3DD0C397 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,10 +80,20 @@
 		8889957C2875C8CE0057330B /* SCGateway-Mixpanel */ = {
 			isa = PBXGroup;
 			children = (
+				8889958F2875CC980057330B /* SCGateway+Mixpanel.swift */,
 				8889957D2875C8CE0057330B /* SCGateway_Mixpanel.h */,
 				8889957E2875C8CE0057330B /* SCGateway_Mixpanel.docc */,
 			);
 			path = "SCGateway-Mixpanel";
+			sourceTree = "<group>";
+		};
+		F6FFE35E0DEC2F7E3DD0C397 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88AEF39D28B4AE4B00367968 /* Auth0.framework */,
+				FEF4B5EC88EBE74980F62623 /* Pods_SCGateway_Mixpanel.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +114,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 888995832875C8CE0057330B /* Build configuration list for PBXNativeTarget "SCGateway-Mixpanel" */;
 			buildPhases = (
+				339FC4719424C426781B1075 /* [CP] Check Pods Manifest.lock */,
 				888995752875C8CE0057330B /* Headers */,
 				888995762875C8CE0057330B /* Sources */,
 				888995772875C8CE0057330B /* Frameworks */,
@@ -97,6 +141,9 @@
 					888995792875C8CE0057330B = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
+					888995862875C90E0057330B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 888995742875C8CE0057330B /* Build configuration list for PBXProject "SCGateway-Mixpanel" */;
@@ -113,6 +160,7 @@
 			projectRoot = "";
 			targets = (
 				888995792875C8CE0057330B /* SCGateway-Mixpanel */,
+				888995862875C90E0057330B /* SCGateway-Mixpanel-Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -127,11 +175,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		339FC4719424C426781B1075 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCGateway-Mixpanel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8889958D2875CB800057330B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\necho \"UNIVERSAL_OUTPUTFOLDER\"\necho \"${UNIVERSAL_OUTPUTFOLDER}\"\n\necho \"CONFIGURATION\"\necho \"${CONFIGURATION}\"\n\necho \"BUILD_DIR\"\necho \"${BUILD_DIR}\"\n\necho \"BUILD_ROOT\"\necho \"${BUILD_ROOT}\"\n\necho \"PROJECT_NAME\"\necho \"${PROJECT_NAME}\"\n \necho \"BUILT PRODUCTS DIR\"\necho \"${BUILT_PRODUCTS_DIR}\"\n\necho \"Framework Search Parths\"\necho \"${FRAMEWORK_SEARCH_PATHS}\"\n\n#ls -a ${BUILT_PRODUCTS_DIR}/Auth0\n \n#xcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n#xcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Try without clean build\n#xcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n#xcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n#Try building workspace\nxcodebuild -workspace \"${PROJECT_DIR}/${PROJECT_NAME}.xcworkspace\" -scheme \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos OBJROOT=\"${OBJROOT}/DependentBuilds\" BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\"\n\nxcodebuild -workspace \"${PROJECT_DIR}/${PROJECT_NAME}.xcworkspace\" -scheme \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator OBJROOT=\"${OBJROOT}/DependentBuilds\" BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\"\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/SCGateway_Mixpanel.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\n\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/SCGateway_Mixpanel.framework/Modules/SCGateway_Mixpanel.swiftmodule/.\"\n\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\necho \"SIMULATOR_SWIFT_MODULES_DIR\"\necho \"${SIMULATOR_SWIFT_MODULES_DIR}\"\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/SCGateway_Mixpanel.framework/SCGateway_Mixpanel\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/SCGateway_Mixpanel.framework/SCGateway_Mixpanel\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/SCGateway_Mixpanel.framework/SCGateway_Mixpanel\"\n\necho \"PROJECT_DIR\"\necho \"${PROJECT_DIR}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/SCGateway_Mixpanel.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		888995762875C8CE0057330B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888995902875CC980057330B /* SCGateway+Mixpanel.swift in Sources */,
 				8889957F2875C8CE0057330B /* SCGateway_Mixpanel.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +267,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "${BUILD_DIR}/${CONFIGURATION}${EFFECTIVE_PLATFORM_NAME}/Auth0/**";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -190,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -247,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -261,6 +353,7 @@
 		};
 		888995842875C8CE0057330B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 325F9920F8510CA3680544FC /* Pods-SCGateway-Mixpanel.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -269,26 +362,34 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator15.5]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"$(BUILT_PRODUCTS_DIR)/Auth0",
+					"$(BUILT_PRODUCTS_DIR)/SimpleKeychain",
+					"$(BUILT_PRODUCTS_DIR)/JWTDecode",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smallcase.SCGateway-Mixpanel";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		888995852875C8CE0057330B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50D4627E8020563A09063162 /* Pods-SCGateway-Mixpanel.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -297,21 +398,69 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator15.5]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"$(BUILT_PRODUCTS_DIR)/Auth0",
+					"$(BUILT_PRODUCTS_DIR)/SimpleKeychain",
+					"$(BUILT_PRODUCTS_DIR)/JWTDecode",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smallcase.SCGateway-Mixpanel";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		888995882875C90E0057330B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFHF2F2UCF;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator15.5]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)/Auth0/",
+					"$(BUILT_PRODUCTS_DIR)/Mixpanel-swift",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/Auth0",
+					"$(BUILT_PRODUCTS_DIR)/JWTDecode",
+					"$(BUILT_PRODUCTS_DIR)/SimpleKeychain",
+					"$(BUILT_PRODUCTS_DIR)/Mixpanel-swift",
+				);
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		888995892875C90E0057330B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFHF2F2UCF;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator15.5]" = arm64;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/Auth0",
+					"$(BUILT_PRODUCTS_DIR)/SimpleKeychain",
+					"$(BUILT_PRODUCTS_DIR)/JWTDecode",
+					"$(BUILT_PRODUCTS_DIR)/Mixpanel-swift",
+				);
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -332,6 +481,15 @@
 			buildConfigurations = (
 				888995842875C8CE0057330B /* Debug */,
 				888995852875C8CE0057330B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		888995872875C90E0057330B /* Build configuration list for PBXAggregateTarget "SCGateway-Mixpanel-Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				888995882875C90E0057330B /* Debug */,
+				888995892875C90E0057330B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

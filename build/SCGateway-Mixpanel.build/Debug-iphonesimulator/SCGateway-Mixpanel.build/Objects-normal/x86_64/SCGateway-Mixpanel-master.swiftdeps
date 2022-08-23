@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
+options: "020af5e6d5c1160e318893a23018d2611a4ece95390c8e9a2ec1abb65622fbc2"
+build_start_time: [1661250197, 464702129]
+build_end_time: [1661250197, 566611051]
+inputs:
+  "/Users/ankitdeshmukh/Desktop/iOS/SCGateway-Mixpanel/SCGateway-Mixpanel/SCGateway+Auth0.swift": !private [1661236145, 923938035]
+  "/Users/ankitdeshmukh/Desktop/iOS/SCGateway-Mixpanel/SCGateway-Mixpanel/SCGateway+Mixpanel.swift": !private [1661236145, 934839725]

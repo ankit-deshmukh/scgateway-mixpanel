@@ -1,0 +1,139 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "SCGateway_Mixpanel",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Function",
+      "name": "setupMixpanel",
+      "printedName": "setupMixpanel(completion:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Void",
+          "printedName": "()"
+        },
+        {
+          "kind": "TypeFunc",
+          "name": "Function",
+          "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Result",
+              "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Error",
+                  "printedName": "Swift.Error",
+                  "usr": "s:s5ErrorP"
+                }
+              ],
+              "usr": "s:s6ResultO"
+            }
+          ]
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:18SCGateway_Mixpanel05setupB010completionyys6ResultOySbs5Error_pGc_tF",
+      "mangledName": "$s18SCGateway_Mixpanel05setupB010completionyys6ResultOySbs5Error_pGc_tF",
+      "moduleName": "SCGateway_Mixpanel",
+      "declAttributes": [
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "setupMixpanelForANewUser",
+      "printedName": "setupMixpanelForANewUser(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Void",
+          "printedName": "()"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:18SCGateway_Mixpanel05setupB11ForANewUseryySSF",
+      "mangledName": "$s18SCGateway_Mixpanel05setupB11ForANewUseryySSF",
+      "moduleName": "SCGateway_Mixpanel",
+      "declAttributes": [
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "identifyUser",
+      "printedName": "identifyUser(_:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Void",
+          "printedName": "()"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:18SCGateway_Mixpanel12identifyUseryySSF",
+      "mangledName": "$s18SCGateway_Mixpanel12identifyUseryySSF",
+      "moduleName": "SCGateway_Mixpanel",
+      "declAttributes": [
+        "RawDocComment"
+      ],
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "SCGateway_Mixpanel",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Auth0",
+      "printedName": "Auth0",
+      "declKind": "Import",
+      "moduleName": "SCGateway_Mixpanel"
+    }
+  ],
+  "json_format_version": 6
+}

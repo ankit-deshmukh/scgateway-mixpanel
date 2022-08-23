@@ -13,7 +13,7 @@ func setupMixpanel(completion: @escaping(Result<Bool,Error>) -> Void) {
     //        SessionManager.mixpanelSetupInProgress = true
     //
     //        if SessionManager.baseEnvironment == .development || SessionManager.baseEnvironment == .staging {
-    Mixpanel.initialize(token: "952676d310d87d9665e5d79f88cc8814")
+//    Mixpanel.initialize(token: "952676d310d87d9665e5d79f88cc8814")
     //            SessionManager.mixpanelSetupComplete = true
     //        } else {
     //
@@ -99,21 +99,21 @@ func setupMixpanel(completion: @escaping(Result<Bool,Error>) -> Void) {
 //        }
 //    }
 
-func registerMixpanelEvent(eventName: String, additionalProperties: [String: Any]) {
-    
-    //        if SessionManager.mixpanelSetupComplete {
-    //            Mixpanel.mainInstance().track(event: eventName, properties: additionalProperties)
-    //        } else if SessionManager.mixpanelSetupInProgress {
-    //
-    //            DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-    //
-    //                if SessionManager.mixpanelSetupComplete {
-    //                    Mixpanel.mainInstance().track(event: eventName, properties: additionalProperties)
-    //                }
-    //
-    //            })
-    //        }
-}
+//func registerMixpanelEvent(eventName: String, additionalProperties: [String: Any]) {
+//
+//    //        if SessionManager.mixpanelSetupComplete {
+//    //            Mixpanel.mainInstance().track(event: eventName, properties: additionalProperties)
+//    //        } else if SessionManager.mixpanelSetupInProgress {
+//    //
+//    //            DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+//    //
+//    //                if SessionManager.mixpanelSetupComplete {
+//    //                    Mixpanel.mainInstance().track(event: eventName, properties: additionalProperties)
+//    //                }
+//    //
+//    //            })
+//    //        }
+//}
 
 /// Reset and setup mixpanel again if the SDK has a smallcaseAuthId already stored in UserDefaults and the SDK got initialised with a new smallcaseAuthId
 /// - Parameter newAuthId: the smallcaseAuthId of the new user

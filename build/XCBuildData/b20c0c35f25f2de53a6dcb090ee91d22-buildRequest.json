@@ -1,0 +1,46 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "480e57b5d9dc959f53bb1900036d2bfd593b8c405c10419084ec9382746e9ece"
+    }
+  ],
+  "containerPath" : "/Users/ankitdeshmukh/Desktop/iOS/SCGateway-Mixpanel/SCGateway-Mixpanel.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "BUILD_DIR" : "/Users/ankitdeshmukh/Library/Developer/Xcode/DerivedData/SCGateway-Mixpanel-aepjlsaiikddulcrvkpbbohixzbm/Build/Products",
+          "BUILD_ROOT" : "/Users/ankitdeshmukh/Library/Developer/Xcode/DerivedData/SCGateway-Mixpanel-aepjlsaiikddulcrvkpbbohixzbm/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "NO",
+          "SDKROOT" : "iphonesimulator15.5",
+          "TOOLCHAINS" : "com.apple.dt.toolchain.XcodeDefault"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      },
+      "toolchainOverride" : "com.apple.dt.toolchain.XcodeDefault"
+    }
+  },
+  "schemeCommand" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
