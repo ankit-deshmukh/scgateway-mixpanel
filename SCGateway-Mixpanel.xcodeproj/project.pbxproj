@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		8844192328C62B5100357F90 /* SCGateway_Mixpanel_Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8844192428C62B5100357F90 /* Build configuration list for PBXAggregateTarget "SCGateway_Mixpanel_Framework" */;
+			buildPhases = (
+				8844192728C62B5800357F90 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = SCGateway_Mixpanel_Framework;
+			productName = SCGateway_Mixpanel_Framework;
+		};
 		888995862875C90E0057330B /* SCGateway-Mixpanel-Framework */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 888995872875C90E0057330B /* Build configuration list for PBXAggregateTarget "SCGateway-Mixpanel-Framework" */;
@@ -25,6 +36,7 @@
 		8889957F2875C8CE0057330B /* SCGateway_Mixpanel.docc in Sources */ = {isa = PBXBuildFile; fileRef = 8889957E2875C8CE0057330B /* SCGateway_Mixpanel.docc */; };
 		888995802875C8CE0057330B /* SCGateway_Mixpanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8889957D2875C8CE0057330B /* SCGateway_Mixpanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		888995902875CC980057330B /* SCGateway+Mixpanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8889958F2875CC980057330B /* SCGateway+Mixpanel.swift */; };
+		88E8C39628B8C5F900F8E1BD /* Mixpanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E8C39528B8C5F900F8E1BD /* Mixpanel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +47,7 @@
 		8889957E2875C8CE0057330B /* SCGateway_Mixpanel.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SCGateway_Mixpanel.docc; sourceTree = "<group>"; };
 		8889958F2875CC980057330B /* SCGateway+Mixpanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCGateway+Mixpanel.swift"; sourceTree = "<group>"; };
 		88AEF39D28B4AE4B00367968 /* Auth0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Auth0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E8C39528B8C5F900F8E1BD /* Mixpanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Mixpanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF4B5EC88EBE74980F62623 /* Pods_SCGateway_Mixpanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCGateway_Mixpanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -43,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E8C39628B8C5F900F8E1BD /* Mixpanel.framework in Frameworks */,
 				622204F4D0FBF8EC672181DC /* Pods_SCGateway_Mixpanel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +104,7 @@
 		F6FFE35E0DEC2F7E3DD0C397 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88E8C39528B8C5F900F8E1BD /* Mixpanel.framework */,
 				88AEF39D28B4AE4B00367968 /* Auth0.framework */,
 				FEF4B5EC88EBE74980F62623 /* Pods_SCGateway_Mixpanel.framework */,
 			);
@@ -138,6 +153,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					8844192328C62B5100357F90 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					888995792875C8CE0057330B = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -161,6 +179,7 @@
 			targets = (
 				888995792875C8CE0057330B /* SCGateway-Mixpanel */,
 				888995862875C90E0057330B /* SCGateway-Mixpanel-Framework */,
+				8844192328C62B5100357F90 /* SCGateway_Mixpanel_Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +217,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8844192728C62B5800357F90 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nset -e\n\n# Setup\nWORKSPACE=\"${PROJECT_DIR}/${PROJECT_NAME}.xcworkspace\"\nFRAMEWORK_NAME=\"SCGateway_Mixpanel\"\nBUILD_DIR=\"${SRCROOT}/build\"\nOUTPUT_DIR=\"${HOME}/Desktop/\"\nOUTPUT=\"${OUTPUT_DIR}/${FRAMEWORK_NAME}.framework\"\nCONFIGURATION=\"${CONFIGURATION}\"\n\nrm -rf \"${BUILD_DIR}\"\nrm -rf \"${OUTPUT}\"\nmkdir -p \"${OUTPUT_DIR}\"\n\n# Build the framework for device and for simulator (using all needed architectures).\nxcodebuild -workspace \"${WORKSPACE}\" -scheme \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -arch x86_64 only_active_arch=no defines_module=yes -sdk \"iphonesimulator\" clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator OBJROOT=\"${OBJROOT}/DependentBuilds\"\nxcodebuild -workspace \"${WORKSPACE}\" -scheme \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -arch arm64 only_active_arch=no defines_module=yes -sdk \"iphoneos\" clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\n# Copy the device version of framework to output.\ncp -r \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\" \"${OUTPUT}\"\n\n# Replace the framework executable within the framework with a new version created by merging the device and simulator frameworks' executables with lipo.\nlipo -create -output \"${OUTPUT}/${FRAMEWORK_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# Copy the Swift module mappings for the simulator into the framework. The device mappings already exist from step 6.\ncp -r \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${OUTPUT}/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\n# Delete build.\n# rm -rf \"${BUILD_DIR}\"\n";
+		};
 		8889958D2875CB800057330B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -213,7 +249,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\necho \"UNIVERSAL_OUTPUTFOLDER\"\necho \"${UNIVERSAL_OUTPUTFOLDER}\"\n\necho \"CONFIGURATION\"\necho \"${CONFIGURATION}\"\n\necho \"BUILD_DIR\"\necho \"${BUILD_DIR}\"\n\necho \"BUILD_ROOT\"\necho \"${BUILD_ROOT}\"\n\necho \"PROJECT_NAME\"\necho \"${PROJECT_NAME}\"\n \necho \"BUILT PRODUCTS DIR\"\necho \"${BUILT_PRODUCTS_DIR}\"\n\necho \"Framework Search Parths\"\necho \"${FRAMEWORK_SEARCH_PATHS}\"\n\n#ls -a ${BUILT_PRODUCTS_DIR}/Auth0\n \n#xcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n#xcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Try without clean build\n#xcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n#xcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n#Try building workspace\nxcodebuild -workspace \"${PROJECT_DIR}/${PROJECT_NAME}.xcworkspace\" -scheme \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos OBJROOT=\"${OBJROOT}/DependentBuilds\" BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\"\n\nxcodebuild -workspace \"${PROJECT_DIR}/${PROJECT_NAME}.xcworkspace\" -scheme \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator OBJROOT=\"${OBJROOT}/DependentBuilds\" BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\"\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/SCGateway_Mixpanel.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\n\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/SCGateway_Mixpanel.framework/Modules/SCGateway_Mixpanel.swiftmodule/.\"\n\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\necho \"SIMULATOR_SWIFT_MODULES_DIR\"\necho \"${SIMULATOR_SWIFT_MODULES_DIR}\"\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/SCGateway_Mixpanel.framework/SCGateway_Mixpanel\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/SCGateway_Mixpanel.framework/SCGateway_Mixpanel\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/SCGateway_Mixpanel.framework/SCGateway_Mixpanel\"\n\necho \"PROJECT_DIR\"\necho \"${PROJECT_DIR}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/SCGateway_Mixpanel.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\necho \"UNIVERSAL_OUTPUTFOLDER\"\necho \"${UNIVERSAL_OUTPUTFOLDER}\"\n\necho \"CONFIGURATION\"\necho \"${CONFIGURATION}\"\n\necho \"BUILD_DIR\"\necho \"${BUILD_DIR}\"\n\necho \"BUILD_ROOT\"\necho \"${BUILD_ROOT}\"\n\necho \"PROJECT_NAME\"\necho \"${PROJECT_NAME}\"\n \necho \"BUILT PRODUCTS DIR\"\necho \"${BUILT_PRODUCTS_DIR}\"\n\necho \"Framework Search Parths\"\necho \"${FRAMEWORK_SEARCH_PATHS}\"\n\n#ls -a ${BUILT_PRODUCTS_DIR}/Auth0\n \n#xcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n#xcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Try without clean build\n#xcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n#xcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n#Try building workspace\nxcodebuild -workspace \"${PROJECT_DIR}/${PROJECT_NAME}.xcworkspace\" -scheme \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos OBJROOT=\"${OBJROOT}/DependentBuilds\" BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" -UseModernBuildSystem=NO\n\nxcodebuild -workspace \"${PROJECT_DIR}/${PROJECT_NAME}.xcworkspace\" -scheme \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator OBJROOT=\"${OBJROOT}/DependentBuilds\" BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" -UseModernBuildSystem=NO\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/SCGateway_Mixpanel.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\n\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/SCGateway_Mixpanel.framework/Modules/SCGateway_Mixpanel.swiftmodule/.\"\n\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\necho \"SIMULATOR_SWIFT_MODULES_DIR\"\necho \"${SIMULATOR_SWIFT_MODULES_DIR}\"\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/SCGateway_Mixpanel.framework/SCGateway_Mixpanel\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/SCGateway_Mixpanel.framework/SCGateway_Mixpanel\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/SCGateway_Mixpanel.framework/SCGateway_Mixpanel\"\n\necho \"PROJECT_DIR\"\necho \"${PROJECT_DIR}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/SCGateway_Mixpanel.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -230,6 +266,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		8844192528C62B5100357F90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFHF2F2UCF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8844192628C62B5100357F90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BFHF2F2UCF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		888995812875C8CE0057330B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -355,8 +409,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 325F9920F8510CA3680544FC /* Pods-SCGateway-Mixpanel.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BFHF2F2UCF;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -367,14 +423,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-					"$(BUILT_PRODUCTS_DIR)/Auth0",
-					"$(BUILT_PRODUCTS_DIR)/SimpleKeychain",
-					"$(BUILT_PRODUCTS_DIR)/JWTDecode",
+					"${BUILT_PRODUCTS_DIR}/Mixpanel-swift",
+					"${BUILT_PRODUCTS_DIR}/Mixpanel",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smallcase.SCGateway-Mixpanel";
@@ -391,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 50D4627E8020563A09063162 /* Pods-SCGateway-Mixpanel.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -403,14 +459,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
-					"$(BUILT_PRODUCTS_DIR)/Auth0",
-					"$(BUILT_PRODUCTS_DIR)/SimpleKeychain",
-					"$(BUILT_PRODUCTS_DIR)/JWTDecode",
+					"${BUILT_PRODUCTS_DIR}/Mixpanel",
+					"${BUILT_PRODUCTS_DIR}/Mixpanel-swift",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smallcase.SCGateway-Mixpanel";
@@ -426,7 +481,9 @@
 		888995882875C90E0057330B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = BFHF2F2UCF;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator15.5]" = arm64;
@@ -436,10 +493,8 @@
 					"$(BUILT_PRODUCTS_DIR)/Mixpanel-swift",
 				);
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(BUILT_PRODUCTS_DIR)/Auth0",
-					"$(BUILT_PRODUCTS_DIR)/JWTDecode",
-					"$(BUILT_PRODUCTS_DIR)/SimpleKeychain",
 					"$(BUILT_PRODUCTS_DIR)/Mixpanel-swift",
+					"${BUILT_PRODUCTS_DIR}/Mixpanel",
 				);
 				OTHER_CFLAGS = "-fembed-bitcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -449,15 +504,14 @@
 		888995892875C90E0057330B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BFHF2F2UCF;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator15.5]" = arm64;
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(BUILT_PRODUCTS_DIR)/Auth0",
-					"$(BUILT_PRODUCTS_DIR)/SimpleKeychain",
-					"$(BUILT_PRODUCTS_DIR)/JWTDecode",
 					"$(BUILT_PRODUCTS_DIR)/Mixpanel-swift",
+					"${BUILT_PRODUCTS_DIR}/Mixpanel",
 				);
 				OTHER_CFLAGS = "-fembed-bitcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -467,6 +521,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8844192428C62B5100357F90 /* Build configuration list for PBXAggregateTarget "SCGateway_Mixpanel_Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8844192528C62B5100357F90 /* Debug */,
+				8844192628C62B5100357F90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		888995742875C8CE0057330B /* Build configuration list for PBXProject "SCGateway-Mixpanel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
